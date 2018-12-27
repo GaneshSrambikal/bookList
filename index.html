@@ -22,17 +22,28 @@
                 <input type="text" id="title" class="form-control">
             </div>
             <div class="form-group">
-                    <label for="author">Author</label>
-                    <input type="text" id="author" class="form-control">
-                </div>
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
             <div class="form-group">
-                        <label for="isbn">ISBN_No.</label>
-                        <input type="text" id="isbn" class="form-control">
-                    </div>
-            <input type="text" value="Add Book" class="btn btn-primary btn-block">       
+                <label for="isbn">ISBN_No.</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
         </form>
-        <div class="table table-stripped"></div>
+        <table class="table table-stripped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN_No.</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
     </div>
 </body>
+<script src="app.js"></script>
 
 </html>
